@@ -26,7 +26,15 @@ class CollegeClass: NSObject
         
     }
     
-    
+    init(Name: String, Location: String, Population: Int)
+    {
+        super.init()
+        name = Name
+        location = Location
+        numberOfStudents = Population
+        
+        
+    }
     
     
     

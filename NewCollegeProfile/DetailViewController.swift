@@ -27,14 +27,27 @@ class DetailViewController: UIViewController
 
         collegeTextField.text = college.name
         locationTextField.text = college.location
-        
-       
-        
-        
-        
+        studentNumber.text = String(college.numberOfStudents)
+        myImageView.image = college.image
    
     }
 
   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
