@@ -36,11 +36,7 @@ class CollegeClass: NSObject
         
     }
     
-    
-    
-    
-    
-    
+  
     
 
 }

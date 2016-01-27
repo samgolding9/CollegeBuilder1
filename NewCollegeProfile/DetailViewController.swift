@@ -16,10 +16,7 @@ class DetailViewController: UIViewController
     @IBOutlet weak var studentNumber: UITextField!
     
     var college : CollegeClass!
-    
-    
-    
-    
+
     
     override func viewDidLoad()
     {
@@ -29,25 +26,20 @@ class DetailViewController: UIViewController
         locationTextField.text = college.location
         studentNumber.text = String(college.numberOfStudents)
         myImageView.image = college.image
-   
     }
+    
+    
+    @IBAction func saveButton(sender: UIButton)
+    {
+        college.name = collegeTextField.text!
+        college.location = locationTextField.text!
+        college.numberOfStudents = Int(studentNumber.text!)!
+    }
+    
 
   
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
 
 }
