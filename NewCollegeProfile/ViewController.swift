@@ -11,9 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet weak var myTableView: UITableView!
-    @IBOutlet weak var editbutton: UIBarButtonItem!
+    @IBOutlet weak var editButton: UIBarButtonItem!
     var colleges : [CollegeClass] = []
-    
     
 
     override func viewDidLoad()
@@ -22,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         myTableView.dataSource = self
         myTableView.delegate = self
-        editbutton.tag = 0
+        editButton.tag = 0
         
         
         
@@ -34,20 +33,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
 
-     @IBAction func editButtonTapped(sender: UIBarButtonItem)
+    
+    @IBAction func editButtonTapped(sender: AnyObject)
     {
-     if editbutton.tag == 0
+     if editButton.tag == 0
      {
         myTableView.editing = true
-        editbutton.tag = 1
+        editButton.tag = 1
         }
         else
      {
         myTableView.editing = false
-        editbutton.tag = 0
+        editButton.tag = 0
         }
     }
-    
     
     @IBAction func addButton(sender: UIBarButtonItem)
     {
@@ -141,11 +140,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-    
-    
- 
-    
-
 
 
 }
